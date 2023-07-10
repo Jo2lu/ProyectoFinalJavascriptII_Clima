@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1 class="hero">Consulta de Clima</h1>
+    </div>
+    <div class="buscador">
+        <div class="unaCiudad">
+            <div><label for="ciudad">Clima en una ciudad:</label></div>
+            <div>
+                <input type="text" id="ciudad" placeholder="Cork">
+                <button onclick="consultarClima()">Buscar</button>
+            </div>
+        </div>
+
+        <div class="muchasCiudades">
+            <div><label for="ciudades">Clima en varias ciudades:</label></div>
+            <div>
+                <input type="text" id="ciudades" value="Monterrey, Malta, Dublin">
+                <button onclick="consultarClimas()">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="reset"><button onclick="formateoTabla()">Limpiar Tabla</button></div>
+
+    <br><br>
+
+    <div>
+        <table id="tabla-clima">
+            <thead>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Temperatura</th>
+                    <th>Descripción</th>
+                    <th>Clima</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

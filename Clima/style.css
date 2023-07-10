@@ -1,0 +1,85 @@
+/* Atributos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    background: #fff;
+    font-family: 'Times New Roman', Times, serif;    
+	margin: 0;
+    background-image: url(https://i.pinimg.com/564x/20/1e/0a/201e0ab787e1077ba29accb0e33bcb08.jpg);
+}
+/* Hero */
+.hero{
+    background-color: rgb(50, 45, 50);
+    padding: 5px;    
+}
+h1{
+    text-align: center;
+    color: #fff;
+    padding-top: 1vh;
+}
+
+/* Buscadores */
+.buscador{
+    display:flex;
+    background: #03A9F5;
+    padding: 10px;
+}
+.unaCiudad, .muchasCiudades{
+    margin: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+.unaCiudad div, .muchasCiudades div{
+    display:grid;
+    margin: 6px;
+}
+label{
+    color: #fff;
+    font-size: 25px;
+}
+button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ff0081;
+    color: #fff;
+    font-size: medium;
+}
+input{
+    padding: 5px;
+    font-size: large;
+    font-weight:600;
+    background-color: #ffffff00;
+    color: #fff;
+    border-color: #00000036;
+    border-radius: 5px;
+}
+
+/* Reset */
+.reset button{
+    padding: 10px;
+    font-size: large;
+}
+
+/* Tabla */
+table{
+    margin: 0 auto;
+    width: 95%;
+}
+th,td {
+	padding: 15px;
+    font-size: large;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+}
+thead{
+    background-color: #55608f;
+    color: #fff;
+}
+tbody{
+    background-color: #50c8e0b3;
+}
